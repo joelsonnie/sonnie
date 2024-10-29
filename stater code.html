@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Application Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <header>
+            <h1>RestaurantCover</h1>
+            <h2>Restaurant & Café Insurance Specialists</h2>
+        </header>
+        
+        <h3>Restaurant Application Form</h3>
+        
+        <section>
+            <h4>Business Details</h4>
+            <form action="submit_form.php" method="POST">
+                <label>Named Insured:</label>
+                <input type="text" name="named_insured" required><br><br>
+                
+                <label>Trading as:</label>
+                <input type="text" name="trading_as"><br><br>
+                
+                <label>Website:</label>
+                <input type="text" name="website"><br><br>
+                
+                <label>Tax Status:</label>
+                <input type="text" name="tax_status">
+                <label>ABN:</label>
+                <input type="text" name="abn"><br><br>
+                
+                <label>Occupation:</label>
+                <input type="text" name="occupation"><br><br>
+                
+                <label>Hours of Operation:</label>
+                <input type="text" name="hours_of_operation"><br><br>
+                
+                <label>Years in Operation:</label>
+                <input type="number" name="years_in_operation"><br><br>
+                
+                <label>Period of Insurance:</label>
+                From <input type="date" name="insurance_from">
+                To <input type="date" name="insurance_to"><br><br>
+                
+                <h4>Questions</h4>
+                <p>Have you or any director/partner/manager of the business ever:</p>
+                
+                <label>a. Had insurance declined or cancelled?</label>
+                <input type="checkbox" name="declined_insurance" value="1"><br><br>
+                
+                <label>b. Had an insurer refuse or not invite renewal?</label>
+                <input type="checkbox" name="refused_renewal" value="1"><br><br>
+                
+                <label>c. Had any special conditions imposed on a policy of insurance?</label>
+                <input type="checkbox" name="special_conditions" value="1"><br><br>
+                
+                <label>d. Had a special excess imposed on a policy of insurance?</label>
+                <input type="checkbox" name="special_excess" value="1"><br><br>
+                
+                <label>e. Had a claim rejected under a policy of insurance?</label>
+                <input type="checkbox" name="claim_rejected" value="1"><br><br>
+                
+                <label>f. Been declared bankrupt or put into receivership or liquidation?</label>
+                <input type="checkbox" name="bankruptcy" value="1"><br><br>
+                
+                <label>g. Been charged with or convicted of a criminal offence?</label>
+                <input type="checkbox" name="criminal_offence" value="1"><br><br>
+                
+                <label>h. Any other matters you should disclose?</label>
+                <input type="checkbox" name="other_matters" value="1"><br><br>
+                
+                <h4>Claims History</h4>
+                <p>In the last five (5) years has the Company or its Directors or Employees sustained loss or damage...</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Insurer</th>
+                            <th>Details</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="date" name="claim_date"></td>
+                            <td><input type="text" name="insurer"></td>
+                            <td><input type="text" name="claim_details"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <br>
+                <button type="submit">Submit Application</button>
+            </form>
+        </section>
+    </div>
+</body>
+</html>
